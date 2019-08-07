@@ -56,7 +56,7 @@
          </ul>
          <ul class="nav navbar-nav navbar-right">
 
-             {% block content %}
+             
              {% if user.is_authenticated %}
              <p style="color:Orange;">Hiii {{ user.first_name }}</p>
              <a href="/accounts/logout" class="btn btn-danger">logout</a>
@@ -65,9 +65,10 @@
              <a href="/accounts/login" class=" btn btn-success">login</a>
              <a href="/regis" class=" btn btn-primary"  >signup</a>
              {% endif %}
-             {% endblock %}
+             
          </ul>
      </div>
  </nav>
+ {% block body %}{% endblock %}
 </body>
 </html>
