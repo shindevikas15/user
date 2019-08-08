@@ -16,6 +16,7 @@ def study_material(request):
 def logout(request):
     return render(request,'myapp/logout.html')
 
+
 def registration_view(request):
     form=signupForm()
     if request.method=='POST':
